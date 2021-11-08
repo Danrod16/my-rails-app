@@ -1,0 +1,21 @@
+
+<h1> <%= @contact_email %></h1>
+<form action="/contact" method="get">
+  <input type="text" name="member" value="<%= params[:member] %>" placeholder="Who are you looking for?">
+  <input type="submit">
+</form>
+
+
+
+<% @members.each do |member| %>
+  <ul>
+    <li> <%= member %></li>
+  </ul>
+<% end %>
+
+
+<%= link_to "about us", about_path %>
+
+<script>
+
+</script>
